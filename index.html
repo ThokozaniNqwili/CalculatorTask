@@ -13,40 +13,41 @@
 <body>
     <div class="container" id="calculator">
 
-        <div type="text" name="result" class="result" id="result" value="" placeholder="Result">
-          
-        </div>
+        <div type="text" name="result" class="result" id="result" value="" > </div>
+        <div type="text" name="result" class="result" id="result2" value="" ></div>
+
+       
 
         <div class="row" id="display">
-            <div type="button" id="btn" class="col-sm">AC</div>
-            <div type="button" id="btn" class="col-sm">Del</div>
-            <div type="button" id="btn" class="col-sm">+</div>
+            <div type="button" onclick="clearSum()" id="clear" class="col-sm value">AC</div>
+            <div type="button" onclick="del()"id="del" class="col-sm value">Del</div>
+            <div type="button" onclick="addToSum('+')" id="plus" class="col-sm-3 operator">+</div>
             
           </div>
        
         <div class="row" id="display">
-          <div type="button" id="btn" class="col-sm ">1</div>
-          <div type="button" id="btn" class="col-sm ">2</div>
-          <div type="button" id="btn" class="col-sm ">3</div>
-          <div type="button" id="btn" class="col-sm ">&times;</div>
+          <div type="button" onclick="addToSum('1')" id="one" class="col-sm value">1</div>
+          <div type="button" onclick="addToSum('2')" id="two" class="col-sm value">2</div>
+          <div type="button" onclick="addToSum('3')" id="three" class="col-sm value">3</div>
+          <div type="button" onclick="addToSum('*')" id="multiply" class="col-sm operator">&times;</div>
           
         </div>
         <div class="row" id="display">
-          <div type="button" id="btn" class="col-sm ">4</div>
-          <div type="button" id="btn" class="col-sm ">5</div>
-          <div type="button" id="btn" class="col-sm ">6</div>
-          <div type="button" id="btn" class="col-sm ">&divide;</div>
+          <div type="button" onclick="addToSum('4')" id="four" class="col-sm value">4</div>
+          <div type="button" onclick="addToSum('5')" id="five" class="col-sm value">5</div>
+          <div type="button" onclick="addToSum('6')" id="six" class="col-sm value">6</div>
+          <div type="button" onclick="addToSum('/')" id="divide" class="col-sm operator">&divide;</div>
           </div>
           <div class="row" id="display">
-          <div type="button" id="btn" class="col-sm ">7</div>
-          <div type="button" id="btn" class="col-sm ">8</div>
-          <div type="button" id="btn" class="col-sm ">9</div>
-          <div type="button" id="btn" class="col-sm ">-</div>
+          <div type="button" onclick="addToSum('7')" id="seven" class="col-sm value">7</div>
+          <div type="button" onclick="addToSum('8')" id="eight" class="col-sm value">8</div>
+          <div type="button" onclick="addToSum('9')" id="nine" class="col-sm value">9</div>
+          <div type="button" onclick="addToSum('-')" id="minus" class="col-sm operator">-</div>
           </div>
           <div class="row"id="display">
-          <div type="button" id="btn" class="col-sm ">0</div>
-          <div type="button" id="btn" class="col-sm">.</div>
-          <div type="button" id="equal" class="col-sm">=</div>
+          <div type="button" onclick="addToSum('0')" id="btn" class="col-sm-3 value">0</div>
+          <div type="button" onclick="addToSum('.')" id="btn" class="col-sm-3 value">.</div>
+          <div type="button" onclick="evaluateSum('=')" id="equal" class="col-sm operator">=</div>
           </div>
           
 
