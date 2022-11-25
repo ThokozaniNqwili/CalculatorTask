@@ -13,8 +13,8 @@
 <body>
     <div class="container" id="calculator">
 
-        <div type="text" name="result" class="result" id="result" value="" > </div>
-        <div type="text" name="result" class="result" id="result2" value="" ></div>
+        <div type="text" name="result" class="result" id="result" > </div>
+        <div type="text" name="result" class="result" id="result2" ></div>
 
        
 
@@ -45,8 +45,8 @@
           <div type="button" onclick="addToSum('-')" id="minus" class="col-sm operator">-</div>
           </div>
           <div class="row"id="display">
-          <div type="button" onclick="addToSum('0')" id="btn" class="col-sm-3 value">0</div>
-          <div type="button" onclick="addToSum('.')" id="btn" class="col-sm-3 value">.</div>
+          <div type="button" onclick="addToSum('0')" id="zero" class="col-sm-3 value">0</div>
+          <div type="button" onclick="decimal(); " id="dot" class="col-sm-3 operator">.</div>
           <div type="button" onclick="evaluateSum('=')" id="equal" class="col-sm operator">=</div>
           </div>
           
