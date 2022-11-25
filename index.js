@@ -52,19 +52,18 @@ function decimal(){
     console.log("step reached")
   } else{
     document.getElementById('result').innerHTML += operator.innerHTML
-    num.push(operator.innerHTML)
+    num.push(operator.innerHTML) // adds to the num array
     console.log(num)
   }
 }
 
 function del() {
-  if (document.getElementById("result").innerHTML) {
     document.getElementById("result").innerHTML = document
       .getElementById("result")
       .innerHTML.slice(0, -1);
-      num.pop()
+      num.pop() // removes the last value in the num array
       console.log(num)
-  }
+  
 }
 
 
