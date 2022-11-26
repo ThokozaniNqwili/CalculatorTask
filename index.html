@@ -20,24 +20,24 @@
       <div type="text" name="result" class="result" id="result"></div>
       <div type="text" name="result" class="result" id="result2"></div>
 
-      <div class="row px-1" id="display">
-        <div type="button" onclick="clearSum()" id="clear" class="col-sm value">
+      <div class="row" id="row1">
+        <div type="button" onclick="clearSum()" id="clear" class="col-sm-6 value">
           AC
         </div>
-        <div type="button" onclick="del()" id="del" class="col-sm value">
+        <div type="button" onclick="del()" id="del" class="col-sm-3 value">
           Del
         </div>
         <div
           type="button"
           onclick="addToSum('+')"
           id="plus"
-          class="col-sm operator"
+          class="col-sm-3 operator"
         >
           +
         </div>
       </div>
 
-      <div class="row" id="display">
+      <div class="row" id="row2">
         <div
           type="button"
           onclick="addToSum('1')"
@@ -71,7 +71,7 @@
           &times;
         </div>
       </div>
-      <div class="row" id="display">
+      <div class="row" id="row3">
         <div
           type="button"
           onclick="addToSum('4')"
@@ -105,7 +105,7 @@
           &divide;
         </div>
       </div>
-      <div class="row" id="display">
+      <div class="row" id="row4">
         <div
           type="button"
           onclick="addToSum('7')"
@@ -139,12 +139,12 @@
           -
         </div>
       </div>
-      <div class="row" id="display">
+      <div class="row" id="row5">
         <div
           type="button"
           onclick="addToSum('0')"
           id="zero"
-          class="col-sm-3 value"
+          class="col-sm value"
         >
           0
         </div>
@@ -152,7 +152,7 @@
           type="button"
           onclick="decimal(); "
           id="dot"
-          class="col-sm-3 operator"
+          class="col-sm operator"
         >
           .
         </div>
@@ -160,7 +160,7 @@
           type="button"
           onclick="evaluateSum('=')"
           id="equal"
-          class="col-sm operator"
+          class="col-sm-6 operator"
         >
           =
         </div>
