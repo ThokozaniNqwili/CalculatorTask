@@ -5,7 +5,7 @@
     /* padding: 1rem 1rem 0 1rem!important; */
  }
   .row>* {
-    width: 4rem!important;
+    width: 6rem!important;
     
    
     
@@ -13,7 +13,7 @@
   
   
    #clear, #equal{
-    flex-grow: 0.68!important;
+    flex-grow: 0.98!important;
  }  
 
 }
